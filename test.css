@@ -1,9 +1,13 @@
 @import url('./Fonts/Comforter_Brush/ComforterBrush-Regular.ttf');
 
-*
+:root /*Stylt das oberste Element (HTML Tag)*/
 {
-    margin: 0;
-    padding: 0;
+    font-size: 62,5%; /*Schriftgröße ganze Seite Scalierbar*/
+}
+
+body
+{
+    font-size: 1.6rem; /*setzt die Schriftgröße auf Standart zurück*/
 }
 
 h1
@@ -76,13 +80,18 @@ p
     border: double 5px red;
 }
 
+.clip
+{
+    width: 730px; /*entspricht ungefähr 48%*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .p7
 {
     font-family: 'Comforter Brush', cursive;
     font-style: italic;
-    max-height: 20px;
-    clip: auto;
-    overflow: hidden;
     border-bottom: solid 1px blue;
 }
 
@@ -133,9 +142,4 @@ p
 .p14::first-line
 {
     font-weight: bolder ;
-}
-
-:root /*Stylt das oberste Element (HTML Tag)*/
-{
-    font-size: 0.8em;
 }
