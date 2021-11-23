@@ -2,12 +2,12 @@
 
 :root /*Stylt das oberste Element (HTML Tag)*/
 {
-    font-size: 62,5%; /*Schriftgröße ganze Seite Scalierbar*/
+    font-size: 62,5%; /*Schriftgröße ganze Seite Scalierbar 10px=1em*/
 }
 
 body
 {
-    font-size: 1.6rem; /*setzt die Schriftgröße auf Standart zurück*/
+    font-size: 1.6rem; /*setzt die Schriftgröße auf Standart zurück 10px=1em*/
 }
 
 h1
@@ -97,49 +97,56 @@ p
 
 .p8
 {
-    text-transform: uppercase;
+    text-transform: uppercase; /*alle Buchstaben groß*/ 
 }
 
 .p9
 {
-    text-transform: lowercase;
+    text-transform: lowercase; /*alle Buchstaben klein*/ 
 }
 
 .p10
 {
     color: #a0a;
     text-shadow: 2px 3px 2px red;
-    /*            links/rechts runter/hoch    bleur
-    text-shadow:      2px          3px         2px     red;*/
+    /*            links/rechts runter/hoch    bleur   Farbe
+    text-shadow:  -2px   2px   -3px    3px     2px     red;*/
 }
 
 .p11
 {
-    font-variant: small-caps;
+    font-variant: small-caps; /**/ 
 }
 
-.p12::before
+.p12::before /*fügt Content vor dem Element ein*/ 
 {
     content: "Variante 1:";
     color: red;
     font-size: 1.5em;
 }
 
-.p12::after
+.p12::after 
 {
     content: "Variante 2:";
     color: green;
     font-size: 1.5em;
 }
 
-.p13::first-letter
+.p13::first-letter /* formatiert nur den ersten Buchstaben*/ 
 {
     color: red;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
 }
 
-.p14::first-line
+.p14::first-line /*formatiert die erste Zeile*/ 
 {
     font-weight: bolder ;
+}
+
+.p15::after /*setzt einen Contant hinter das angesprochene Element*/ 
+{
+    font-family: "Font Awesome 5 Free";
+    content:"\f086";
+    /* font-weight: 900; */
 }
